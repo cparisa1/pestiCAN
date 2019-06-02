@@ -17,12 +17,12 @@ export class ApiService {
   // GET list of public, future events
   getMedicines() {
     return this.http
-      .get(`${API_URL}/getMedicines`);
+      .get(`${API_URL}/getPesticides`);
   }
 
   apiMedicine(medicineid){
     return this.http
-      .get(`${API_URL}/medicines/`+ medicineid);
+      .get(`${API_URL}/pesticides/`+ medicineid);
   }
 
   apiPostUser(userObj){

@@ -3,12 +3,13 @@ import { ActivatedRoute, Router } from "@angular/router";
 import { ApiService } from '../services/api.service';
 import { LocalStorageService, SessionStorageService, LocalStorage, SessionStorage } from 'angular-web-storage';
 
+
 @Component({
-  selector: 'app-medicines-info',
-  templateUrl: './medicines-info.component.html',
-  styleUrls: ['./medicines-info.component.css']
+  selector: 'app-pesticides-info',
+  templateUrl: './pesticides-info.component.html',
+  styleUrls: ['./pesticides-info.component.css']
 })
-export class MedicinesInfoComponent implements OnInit {
+export class PesticidesInfoComponent implements OnInit {
 
   public medicineId:any;
   public medicineDetails;
@@ -66,4 +67,5 @@ export class MedicinesInfoComponent implements OnInit {
    }
    this.router.navigate(['/cart']);
   }
+
 }

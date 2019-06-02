@@ -3,19 +3,18 @@ import { ApiService } from '../services/api.service';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-my-medicines',
-  templateUrl: './my-medicines.component.html',
-  styleUrls: ['./my-medicines.component.css']
+  selector: 'app-pesticides',
+  templateUrl: './pesticides.component.html',
+  styleUrls: ['./pesticides.component.css']
 })
-export class MyMedicinesComponent implements OnInit {
+export class PesticidesComponent implements OnInit {
 
   public medicines;
-  constructor(
-    private apiService: ApiService,
+  
+  constructor(private apiService: ApiService,
     private router: Router) { }
 
   ngOnInit() {
-    //alert("This is my-medicine");
     console.log(this.apiService.getMedicines().subscribe(res => {
       //console.log(res);
       this.medicines = res;
@@ -24,11 +23,9 @@ export class MyMedicinesComponent implements OnInit {
     console.error
   ))
   }
-
   navigateToOrder($event, medicineId) {
     //alert(medicineId.$oid);
-   
-    this.router.navigate(['/medicines/'+medicineId.$oid]);
+    this.router.navigate(['/pesticides/'+medicineId.$oid]);
   }
 
 }
