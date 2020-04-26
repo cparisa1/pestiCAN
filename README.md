@@ -1,2 +1,3 @@
-# pestiCAN
-This Project is sample model of the Online Delivery of Pesticides.
+# Project PestiC@N
+
+# Note: This project is just for the submission of the course project. This is not developed for any business purpose or internal or external benefits.
