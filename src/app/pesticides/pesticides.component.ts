@@ -25,7 +25,7 @@ export class PesticidesComponent implements OnInit {
   }
   navigateToOrder($event, medicineId) {
     //alert(medicineId.$oid);
-    this.router.navigate(['/pesticides/'+medicineId.$oid]);
+    this.router.navigate(['/pesticides/'+ medicineId.$oid]);
   }
 
 }
