@@ -8,14 +8,14 @@
 
 <div class="container">
   <div class="card-deck mb-3 text-center">
-    <ng-container *ngFor="let medicine of medicines, let i=index">
+    <ng-container *ngFor="let pesticide of pesticides, let i=index">
       <div class="card mb-4 shadow-sm" *ngIf="i<3">
         <div class="card-header" >
-          <h4 class="my-0 font-weight-normal">{{medicine.name}}</h4>
+          <h4 class="my-0 font-weight-normal">{{pesticide.name}}</h4>
         </div>
         <div class="card-body">
-          <img class="img-card-body" src="/assets/{{medicine.image}}">
-          <button type="button" class="btn btn-lg btn-block btn-outline-primary" (click)="navigateToOrder($event, medicine._id)">Order Now</button>
+          <img class="img-card-body" src="/assets/{{pesticide.image}}">
+          <button type="button" class="btn btn-lg btn-block btn-outline-primary" (click)="navigateToOrder($event, pesticide._id)">Order Now</button>
         </div>
       </div>
   </ng-container>

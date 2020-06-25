@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-import {HttpClient, HttpErrorResponse} from '@angular/common/http';
-import {Observable} from 'rxjs';
-import {API_URL} from '../env';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { API_URL } from '../env';
 
 @Injectable({
   providedIn: 'root'
@@ -15,14 +15,14 @@ export class ApiService {
   }
 
   // GET list of public, future events
-  getMedicines() {
+  getPesticides() {
     return this.http
       .get(`${API_URL}/getPesticides`);
   }
 
-  apiMedicine(medicineid){
+  apiPesticide(pesticideid){
     return this.http
-      .get(`${API_URL}/pesticides/`+ medicineid);
+      .get(`${API_URL}/pesticides/`+ pesticideid);
   }
 
   apiPostUser(userObj){
